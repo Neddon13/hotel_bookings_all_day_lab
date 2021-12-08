@@ -1,12 +1,12 @@
 import Booking from "./Booking.js";
 
-const BookingList = ({bookings, deleteBooking}) =>{
+const BookingList = ({bookings, deleteBooking, updateBooking}) =>{
     if (!bookings) return <h2>Loading</h2>
 
     const listBookings = bookings.map((booking)=>{
         return (
             <>
-                <Booking booking={booking} deleteBooking={deleteBooking} key={booking._id}/>
+                <Booking booking={booking} deleteBooking={deleteBooking} key={booking._id} updateBooking={updateBooking}/>
                 <hr/>
             </>
         )
@@ -18,6 +18,6 @@ const BookingList = ({bookings, deleteBooking}) =>{
         </div>
 
     )
-}
+};
 
 export default BookingList;

@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:5000/api/bookings'
+const baseURL = 'http://localhost:5000/api/bookings/'
 
 export const getBookings = () => {
     return fetch(baseURL)
@@ -14,8 +14,16 @@ export const postBookings = (payload) => {
     .then(res => res.json())
 }
 
-export const deleteBooking = (id) =>{
+export const deleteBooking = (id) => {
     return fetch(baseURL + id, {
         method: 'DELETE'
+    })
+}
+
+export const updateBooking = (id, payload) => {
+    return fetch (baseURL + id, {
+        method: 'PUT',
+        body: JSON.stringify(payload),
+        headers: { 'Content-Type': 'application/json'}
     })
 }

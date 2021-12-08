@@ -28,7 +28,7 @@ const BookingForm = ({addBooking}) =>{
             <label htmlFor="contact">Contact:</label>
             <input  onChange={onChange}type="text" id="contact"  required/>
 
-            <label htmlFor="status">Check-In Status:</label>
+            <label htmlFor="status">Status:</label>
             <input  onChange={onChange}type="text" id="status" required/>
 
             <input type="submit" value="Save" id="save"/>

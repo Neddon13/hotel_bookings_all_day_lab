@@ -5,6 +5,7 @@ import BookingForm from "../Components/BookingForm";
 import BookingList from "../Components/BookingList";
 
 function NogerContainer() {
+
   const [bookings, setBookings] = useState([]);
   useEffect(()=>{
     getBookings()

@@ -1,7 +1,11 @@
-import './App.css';
+import NogerContainer from './Container/NogerContainer';
 
 function App() {
-  return <h1>The Noger Inn</h1>
+  return (
+  <>
+    <NogerContainer />
+  </>
+  )
 }
 
 export default App;

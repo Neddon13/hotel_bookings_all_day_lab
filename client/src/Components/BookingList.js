@@ -13,7 +13,7 @@ const BookingList = ({bookings, deleteBooking, updateBooking}) =>{
     });
 
     return (
-        <div>
+        <div className= "list-div">
             {listBookings}
         </div>
 

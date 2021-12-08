@@ -21,7 +21,8 @@ const BookingForm = ({addBooking}) =>{
     }
 
     return (
-        <form className="" onSubmit={handleSubmit} method="post">
+        <div className="form-div">
+        <form className="main-form" onSubmit={handleSubmit} method="post">
             <label htmlFor="name">Name:</label>
             <input  onChange={onChange}type="text" id="name" v-model="name" required/>
 
@@ -34,6 +35,7 @@ const BookingForm = ({addBooking}) =>{
             <input type="submit" value="Save" id="save"/>
 
         </form>
+        </div>
     )
 }
 export default BookingForm;

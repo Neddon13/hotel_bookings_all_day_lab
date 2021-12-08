@@ -9,6 +9,9 @@ const BookingForm = ({addBooking}) =>{
         e.preventDefault();     
         postBookings(formData).then((data) => {
             addBooking(data);
+        
+        e.target.reset();
+        
         });
     }
 
